@@ -1,0 +1,63 @@
+@charset "UTF-8";
+/* Add your custom CSS declarations below  */
+
+nav {
+    font-size: 30px;
+   padding-top: 2%; 
+}
+
+
+a {
+    color: black;
+}
+a:active {
+    color: blue;
+}
+a:hover {
+    color: red;
+}
+h2 {
+    text-align: center;
+    padding-top: 8%;
+    font-family: 'spartan';
+}
+h3 {
+    font-size: 20px;
+    font-style: italic;
+    font-family: 'spartan';
+}
+p {
+    font-family: 'noto serif';
+}
+table {
+    font-size: 20px;
+    padding-left: 3%;
+    empty-cells: show;
+}
+
+td {
+    height: 27px;
+}
+.logIn {
+    font-size :30px;
+}
+
+.email {
+  color: grey;
+    background-color: lightgray;
+}
+
+.password {
+    color: grey;
+    background-color: lightgray; 
+}
+.createNew {
+    margin-top: 40%;
+}
+.viewMore {
+   margin-bottom: 10%
+}
+footer {
+    font-size: 20px;
+    padding-top: 1.5%; 
+}
