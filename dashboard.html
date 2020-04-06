@@ -8,70 +8,93 @@
 <!-- Bootstrap v4 -->
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="screen">
 <link href="css/custom.css" rel="stylesheet" type="text/css" media="screen">
+    
+    <!-- font family -->
+ <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700|Spartan:300,400,600&display=swap" rel="stylesheet">  
+    
+<!-- fontawesome icons -->
+<script src="https://kit.fontawesome.com/ed9181c43e.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
 <div class="containter">
-<div class="row" style="background-color: lightgray"> <!-- nav and logo div -->
-<div class="col-md-6"> <!-- logo div -->
-<img src="images/logo.png" class="img-fluid" style="padding-left: 15%; padding-top: 2%; padding-bottom: 2%">
+
+<div class="row" style="background-color:white"> <!-- nav and logo div -->
+<div class="col-md-4"> <!-- logo div -->
+<a href="dashboard.html">
+<img src="images/logo.png" class="img-fluid" style="padding-left: 20%; padding-top: 6%; padding-bottom: 6%">
+    </a>
 </div>
-<nav class="col-md-6"> <!-- nav begins -->
-<ul class="nav justify-content-left">
-  <li class="nav-item" style="margin-right: 4%; font-size: 25px">
-    <a class="nav-link active" href="#projects">Projects</a>
+<nav class="col-md-8" style="font-family: 'Spartan'; font-size: 22px"> <!-- nav begins -->
+<ul class="nav justify-content-center">
+  <li class="nav-item" style="margin-right: 4%;margin-left: 4%; text-decoration: underline;">
+    <a class="nav-link active" href="dashboard.html">Dashboard</a>
   </li>
-  <li class="nav-item" style="margin-right: 4%; font-size: 25px">
+  <li class="nav-item" style="margin-right: 4%">
     <a class="nav-link" href="userguide.html">User Guide</a>
   </li>
-<li class="nav-item" style="margin-right: 4%; font-size: 25px">
+<li class="nav-item" style="margin-right: 4%">
     <a class="nav-link" href="forum.html">Forum</a>
   </li>
-<li class="nav-item" style="margin-right: 4%; font-size: 25px">
+<li class="nav-item" style="margin-right: 4%">
     <a class="nav-link" href="settings.html">Settings</a>
   </li>
 </ul>
 </nav>    
-    </div><!-- end first row div for nav and logo -->
+    </div>
 <div class="row"> <!-- div for project boxes -->
-<div class="col-md-12" style="background-color:darkgray; text-align: center; padding-top: 2%; height: 200%">
-    <h1> Projects </h1>
+<!-- tab div -->
+<div class="col-md-12" style="background-color: white; text-align: center; padding-top: 2%; height: 200%">
+<ul class="nav nav-tabs" style="justify-content: center; font-size: 30px">
+  <li class="nav-item">
+    <a class="nav-link active" style="text-decoration: underline; background-color: #DFE6EA" href="#">Project View</a>
+  </li>
+  <li class="nav-item" style="background-color: ;">
+    <a class="nav-link"href="map.html">Map View</a>
+  </li>
+    </ul>
+    </div>
+<div class="col-md-12" style="background-color: #DFE6EA; text-align: center; padding-top: 2%; height: 200%">
     <br>
+<!--
     <a>
     <button class="manageProjects"> Manage Projects</button>
     </a>
 <br>
+-->
 <br> 
 <div class="row" style="margin-bottom: 10%; margin-top: 4%"> <!-- individual project divs -->
 <div class="col projectOne" style="background-color: white; margin-left: 4%">
 <h2> Project One</h2>
-<h3 class="box-numbers"> boxes:</h3>
+<h3 class="box-numbers" style="text-align: left; margin-left: 13%"> boxes:1,2</h3>
 <br>
 <br>
 <br>
-    
-<button class="viewMore"> View More + </button>
+<button class="viewMore" style="margin-right: 30%"> <a href="project.html"> View More +</a> </button>
+<i class="fa fa-pencil fa-lg" aria-hidden="true"></i>
 </div>
-<div class="col projectTwo" style="background-color: white; margin-left: 2%;">
+<div class="col projectTwo" style="background-color:white; margin-left: 2%;">
 <h2>Project Two</h2>
-<h3 class="box-numbers"> boxes:</h3>
+<h3 class="box-numbers" style="text-align: left; margin-left: 13%"> boxes:</h3>
 <br>
 <br>
 <br>
     
-<button class="viewMore"> View More + </button>
+<button class="viewMore" style="margin-right: 30%"> <a href="project.html"> View More +</a></button>
+<i class="fa fa-pencil fa-lg" aria-hidden="true"></i>
 </div>
 <div class="col projectThree" style="background-color: white; margin-left: 2%">
 <h2>Project Three</h2>
-<h3 class="box-numbers"> boxes:</h3>
+<h3 class="box-numbers" style="text-align: left; margin-left: 10%"> boxes:</h3>
 <br>
 <br>
 <br>
-    
-<button class="viewMore"> View More + </button>
+<button class="viewMore" style="margin-right: 30%"><a href="project.html"> View More +</a> </button>
+<i class="fa fa-pencil fa-lg" aria-hidden="true"></i>
 </div>
+<!-- new project button -->
 <div class="col projectNew" style="background-color: white; margin-left: 2%; margin-right: 4%">  
-<button class="createNew"> Create New + </button>
+<button class="btn-lg createNew" style="background-color:#AA4230"> <a href="newproject.html">Create New + </a></button>
 </div>
 </div>
 </div> 
@@ -79,30 +102,28 @@
 </div>
 
    <!-- end projects div -->
-<div class="row footer" style="background-color: lightgray"> <!-- footer div -->
+<div class="row footer" style="background-color: white"> <!-- footer div -->
 <div class="col-md-6"> <!-- logo div -->
 <a href="dashboard.html">
-<img src="images/logo-footer.png" class="img-fluid" style="padding-left: 15%; padding-top: 2%; padding-bottom: 2%; float: left;">
+<img src="images/logo-footer.png" class="img-fluid" style="padding-left: 15%; padding-right: 4%; padding-top: 2%; padding-bottom: 2%; float: left;">
 </a>
-<p style="padding-left: 30%; padding-top:3%">
+<p style="padding-left: 30%; padding-top:3%;color: #26351C">
     Site created by Altek Group
     <br>  
     Harrisonburg, Va 22801
 </p>
 
 </div>
-<footer class="col-md-6" style="padding-left: 15%"> <!-- nav begins -->
+<footer class="col-md-6" style="padding-left: 15%; text-decoration: underline; font-weight: 600;"> <!-- nav begins -->
 <ul class="nav justify-content-center">
   <li class="nav-item" style="margin-right: 2%">
-    <a class="nav-link active" href="about.html">About</a>
+    <a class="nav-link" href="about.html" style="color: #26351C">About</a>
   </li>
   <li class="nav-item" style="margin-right: 2%">
-    <a class="nav-link" href="purchase.html">Purchase</a>
+    <a class="nav-link" href="purchase.html" style="color: #26351C">Purchase</a>
   </li>
 <li class="nav-item">
-    <a class="nav-link" href="#log-in">
-    <button>   Log In </button> 
-    </a>
+    <a class="nav-link" href="#log-out" style="color: #26351C"> Log Out</a>
 </li>
 </ul>
 </footer>    

@@ -9,25 +9,26 @@
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="screen">
 <link href="css/custom.css" rel="stylesheet" type="text/css" media="screen">
 
+
 <!-- font family -->
-    
+ <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700|Spartan:300,400,600&display=swap" rel="stylesheet">   
     
 </head>
 <body>
 <div class="containter">
-<div class="row" style="background-color: lightgray"> <!-- nav and logo div -->
+<div class="row" style="background-color:white"> <!-- nav and logo div -->
 <div class="col-md-6"> <!-- logo div -->
 <a href="index.html">
-<img src="images/logo.png" class="img-fluid" style="padding-left: 15%; padding-top: 2%; padding-bottom: 2%">
+<img src="images/logo.png" class="img-fluid" style="padding-left: 15%; padding-top: 4%; padding-bottom: 4%">
     </a>
 </div>
-<nav class="col-md-6" style="font-family: 'Spartan'; font-weight: 600"> <!-- nav begins -->
+<nav class="col-md-6" style="font-family: 'Spartan'; font-size: 22px"> <!-- nav begins -->
 <ul class="nav justify-content-center">
   <li class="nav-item" style="margin-right: 5%">
-    <a class="nav-link active" href="#about">About</a>
+    <a class="nav-link active" href="#purchase">Purchase Box</a>
   </li>
   <li class="nav-item" style="margin-right: 5%">
-    <a class="nav-link" href="#purchase">Purchase</a>
+    <a class="nav-link" href="#about">About</a>
   </li>
 <li class="nav-item">
     <a class="nav-link" href="#logIn">
@@ -44,13 +45,14 @@
   <iframe src="https://maps.google.com/maps?q=warsaw&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
     style="border:0; width: 100%; position: fixed; height: 400px;" allowfullscreen></iframe>
 </div>
-<div class="col-md-4 logIn" style="background-color: white; margin-left:58%; margin-bottom: 2%; margin-top: 2%; text-align: canter"> 
+<!-- LOG IN DIV -->
+<div class="col-md-4 logIn" style="background-color: #DFE6EA; margin-left:58%; margin-bottom: 5%; margin-top: 5%; text-align: canter"> 
 <h1 style="text-align: center; font-weight: 600; font-size: 25px; padding-top: 2%"> 
-Product owners log in to view your account
+Box Owners Log-In
 </h1>
  <form style="font-size: 20px">
       <fieldset>
-        <legend style="text-align: center">Log In </legend>
+        <legend style="text-align: center"> </legend>
         <p>
           <label style="text-align:center;font-size: 20px">Email Adress</label>
             <br>
@@ -66,70 +68,79 @@ Product owners log in to view your account
                   value = "secret" />
         </p>
       </fieldset>
-    <button class="logInButton" style="margin-bottom: 5%; align-items: center;">
+    <button class="logInButton" style="margin-bottom: 5%; align-items: center;background-color: #93A888">
+<a href="dashboard.html">
 Log In
+</a>
 </button>
     </form> 
 
 </div>
 
 </div>
-<!-- about div -->
-<div class="col-md-12" id="about" style="background-color: darkgrey"> 
-<h1 style="text-align: center; padding-top: 2%; font-family: 'spartan'; font-weight: 600"> About the Box </h1>     
-<p style="padding-left: 15%; padding-right: 15%; padding-top: 3%; padding-bottom: 3%; text-align: center; font-family: 'Noto Serif'"> 
-<!-- about paragraph -->
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</p>
 
-<div class="row" style="margin-bottom: 5%;">
-<div class="col" style="background-color: white; margin-left: 2%">
-<!-- four column divs -->
-<h2> Collect Data </h2>
-<p style="text-align: center">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
-</p>
-</div>
-<div class="col" style="background-color: white; margin-left: 2%;">
-<h2>Analyze Data</h2>
-<p style="text-align: center">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
-</p>
-</div>
-<div class="col" style="background-color: white; margin-left: 2%">
-<h2>Collaborate with Researchers</h2>
-<p style="text-align: center">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
-</p>
-</div>
-<div class="col" style="background-color: white; margin-left: 2%; margin-right: 2%">
-<h2>Export Data</h2>
-<p style="text-align: center">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
-</p>
-</div>
-</div>   <!-- end about div -->
-<div class="col-md-12 purchase" id="purchase" style="background-color: #CECECE">
+
+<div class="col-md-12 purchase" id="purchase" style="background-color: white">
 <!-- image in purchase div -->
 <img src="images/purchase.png" class="img-fluid" style="float: left; padding: 5%">
-<h1 style="padding-top:4.5%; padding-left: 10%"> Purchase the Box</h1>
-<h2 style="padding-top: 2%; text-align: left;"> Mammal Research Box</h2>
+<h1 style="padding-top:4.5%; padding-left: 40%"> Purchase the Data Station</h1>
+<h2 style="padding-top: 2%; text-align: left;"> Animal Monitoring Data Station</h2>
 
 <p style="padding-left: 10%; padding-right: 10%; padding-top: 2%; padding-bottom: 3%; text-align: left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 <br>
 <br>
-<button class="add-to-cart"> Add to Cart</button>
+<button class="add-to-cart" style="background-color: #93A888"> Add to Cart</button>
 </p>
 </div> <!-- end purchase div -->
+<div class="col-md-12" id="about" style="background-color: white"> 
+<h1 style="text-align: center; padding-top: 2%; font-family: 'spartan'; font-weight: 600"> About the Data Station </h1>     
+<!-- about paragraph -->
+<p style="padding-left: 15%; padding-right: 15%; padding-top: 3%; padding-bottom: 3%; text-align: left"> 
+Dr. Katrina Gobetz, JMU Biology professor kept finding dead
+animals in her traps. As she studies endangered animals, this was
+a problem. She designed a ‘better mouse trap’ so animals could
+come and go easily while still gathering data about the animal. She
+partnered with Dr. Bryan Cage to develop the idea into a product
+using 3D printing and a small form factor computer that can connect
+to the Cloud. The Animal Monitoring Data Station has beend eveloped to reduce the overhead and risk during the collection of data on small mammals. Ths product allows fo free movement of animals within the unit while collecing weight, video/photos, and environmental factors (heat and humidity).
+</p>
+
+<div class="row" style="margin-bottom: 5%;">
+<div class="col" style="background-color: white; margin-left: 2%; background-color: #7993A1">
+<!-- four column divs -->
+<h2> Feature One</h2>
+<p style="text-align: center">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+</p>
+</div>
+<div class="col" style="background-color: white; margin-left: 2%;background-color: #7993A1">
+<h2>Feature Two</h2>
+<p style="text-align: center">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+</p>
+</div>
+<div class="col" style="background-color: white; margin-left: 2%;background-color: #7993A1">
+<h2>Feature Three</h2>
+<p style="text-align: center">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+</p>
+</div>
+<div class="col" style="background-color: white; margin-left: 2%; margin-right: 2%;background-color: #7993A1">
+<h2>Feature Four</h2>
+<p style="text-align: center">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+</p>
+</div>
+</div>
 </div>
     
 <div class="col-md-12"><!-- footer div -->
-<div class="row footer" style="background-color: lightgray"> 
+<div class="row footer" style="background-color: #DFE6EA"> 
 <div class="col-md-6"> <!-- logo div -->
 <a href="index.html">
-<img src="images/logo-footer.png" class="img-fluid" style="padding-left: 15%; padding-top: 2%; padding-bottom: 2%; float: left;">
+<img src="images/logo-footer.png" class="img-fluid" style="padding-left: 15%; padding-right: 4%; padding-top: 2%; padding-bottom: 2%; float: left;">
 </a>
-<p style="padding-left: 30%; padding-top:3%">
+<p style="padding-left: 50%; padding-top:3%">
     Site created by Altek Group
     <br>  
     Harrisonburg, Va 22801

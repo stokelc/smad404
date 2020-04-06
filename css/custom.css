@@ -6,12 +6,19 @@ nav {
    padding-top: 2%; 
 }
 
+.nav-item {
+    font-family: 'spartan';
+}
 
 a {
     color: black;
 }
 a:active {
     color: blue;
+    text-decoration: underline;
+}
+.nav nav-tabs {
+    color: red;
 }
 a:hover {
     color: red;
@@ -27,7 +34,7 @@ h3 {
     font-family: 'spartan';
 }
 p {
-    font-family: 'noto serif';
+    font-family: 'Spartan', sans-serif;
 }
 table {
     font-size: 20px;
@@ -57,7 +64,26 @@ td {
 .viewMore {
    margin-bottom: 10%
 }
+.view {
+    text-align: center;
+}
+.dataTitle {
+    text-align: center;
+}
+.boxLocation {
+    text-align: center;
+}
+.date {
+    text-align: center;
+}
 footer {
     font-size: 20px;
     padding-top: 1.5%; 
+}
+col:nth-child(odd) {
+  background: #DFE6EA;
+}
+
+col:nth-child(even) {
+  background:#7993A1;
 }
