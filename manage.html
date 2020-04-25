@@ -3,12 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dashboard: Project View</title>
+<title>Manage</title>
 
 <!-- Bootstrap v4 -->
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="screen">
 <link href="css/custom.css" rel="stylesheet" type="text/css" media="screen">
-    
     <!-- font family -->
  <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700|Spartan:300,400,600&display=swap" rel="stylesheet">  
     
@@ -18,7 +17,6 @@
 </head>
 <body>
 <div class="containter">
-
 <div class="row" style="background-color:white"> <!-- nav and logo div -->
 <div class="col-md-4"> <!-- logo div -->
 <a href="dashboard.html">
@@ -27,82 +25,93 @@
 </div>
 <nav class="col-md-8" style="font-family: 'Spartan'; font-size: 22px"> <!-- nav begins -->
 <ul class="nav justify-content-center">
-  <li class="nav-item" style="margin-right: 4%;margin-left: 4%; text-decoration: underline;">
+  <li class="nav-item" style="margin-right: 4%;margin-left: 4%">
     <a class="nav-link active" href="dashboard.html">Dashboard</a>
   </li>
   <li class="nav-item" style="margin-right: 4%">
     <a class="nav-link" href="userguide.html">User Guide</a>
   </li>
-<li class="nav-item" style="margin-right: 4%">
+<li class="nav-item" style="margin-right: 4%; ">
     <a class="nav-link" href="forum.html">Forum</a>
   </li>
-<li class="nav-item" style="margin-right: 4%">
+<li class="nav-item" style="margin-right: 4%; text-decoration: underline;">
     <a class="nav-link" href="settings.html">Settings</a>
   </li>
 </ul>
 </nav>    
-    </div>
-<div class="row"> <!-- div for project boxes -->
-<!-- tab div -->
-<div class="col-md-12" style="background-color: white; text-align: center; padding-top: 2%; height: 200%">
-<ul class="nav nav-tabs" style="justify-content: center; font-size: 30px">
-  <li class="nav-item">
-    <a class="nav-link active" style="text-decoration: underline; background-color: #DFE6EA" href="#">Project View</a>
-  </li>
-  <li class="nav-item" style="background-color: ;">
-    <a class="nav-link"href="map.html">Map View</a>
-  </li>
-    </ul>
-    </div>
-<div class="col-md-12" style="background-color: #DFE6EA; text-align: center; padding-top: 2%; height: 200%">
-    <br>
-<!--
-    <a>
-    <button class="manageProjects"> Manage Projects</button>
-    </a>
-<br>
--->
-<br> 
-<div class="row" style="margin-bottom: 10%; margin-top: 4%"> <!-- individual project divs -->
-<div class="col projectOne" style="background-color: white; margin-left: 4%">
-<h2> Project One</h2>
-<h3 class="box-numbers" style="text-align: left; margin-left: 13%"> boxes:1,2</h3>
-<br>
-<br>
-<br>
-<button class="viewMore" style="margin-right: 30%"> <a href="project.html"> View More +</a> </button>
-<i class="fa fa-pencil fa-lg" aria-hidden="true"></i>
+
+    </div><!-- end first row div for nav and logo -->
+<div class="row" style="padding-bottom: 5%"> <!-- div for  boxes -->
+<div class="col-md-12" style="background-color:#DFE6EA; padding-top: 2%; padding-bottom: 2%; padding-left: 10%; height: 200%">
+<h1 style="text-align: center"> Account Settings </h1>
+
+<div class="row" style="text-align: center"> <!-- div for header -->
+
+    </div> <!-- end row div for  header -->
+    </div> 
+<div class="row col-md-12" style="max-width: 100%"> 
+<!--search bar-->
+<div class="col-md-4 activity" style=" margin:0">
+    <!-- project topic chart div -->
+
+
+<table border="1" class="dataTable" style=" width: 90%; margin-left: 5%; margin-right: 5%; margin-top: 5.5%; margin-bottom: 3%; text-align: center">
+  <tr> <!-- title row of table -->
+    <td style="font-style: italic"> <a href="privacy.html"> Account</a> </td>
+  </tr> <!-- end title row of table -->
+ <tr>
+    <td style="font-style: italic"> <a href="privacy.html"> Privacy and Notification</a> </td>
+  </tr>
+
+    <tr>
+        <td class="activity" style="font-size: 30px; text-align: center;">  <a href="manage"> Manage</a> </td>
+  </tr>
+
+</table>
+        
+
 </div>
-<div class="col projectTwo" style="background-color:white; margin-left: 2%;">
-<h2>Project Two</h2>
-<h3 class="box-numbers" style="text-align: left; margin-left: 13%"> boxes:</h3>
-<br>
-<br>
-<br>
+<div class="col-md-8">
+<table border=".25" class="dataTable" style="width:90%; margin-left: 1%; margin-top: 3%; margin-bottom: 3%; text-align: center; background-color: white; font-size: 20px">
+  
+    <tr style="text-align: center"> <!-- title row of table -->
+    <th class="view">Screen Name</th>
+    <th class="dataTitle"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></th>
     
-<button class="viewMore" style="margin-right: 30%"> <a href="project.html"> View More +</a></button>
-<i class="fa fa-pencil fa-lg" aria-hidden="true"></i>
+  </tr> <!-- end title row of table -->
+<tr>
+    <td> manage boxes </td>
+    <td><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></td>
+
+  </tr>
+<tr>
+    <td> manage projects </td>
+    <td><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></td>
+
+    
+  </tr>
+  <tr>
+    <td> manage team members </td>
+    <td><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></td>
+
+    
+  </tr>
+  
+
+</table>
 </div>
-<div class="col projectThree" style="background-color: white; margin-left: 2%">
-<h2>Project Three</h2>
-<h3 class="box-numbers" style="text-align: left; margin-left: 10%"> boxes:</h3>
-<br>
-<br>
-<br>
-<button class="viewMore" style="margin-right: 30%"><a href="project.html"> View More +</a> </button>
-<i class="fa fa-pencil fa-lg" aria-hidden="true"></i>
+
+    
 </div>
-<!-- new project button -->
-<div class="col projectNew" style="background-color: white; margin-left: 2%; margin-right: 4%">  
-<button class="btn-lg createNew" style="background-color:#AA4230"> <a href="newproject.html">Create New + </a></button>
-</div>
-</div>
-</div> 
+   
+ <!-- end row div for activity -->
+</div> <!-- end row div for table and activity -->
+
 
 </div>
 
    <!-- end projects div -->
-<div class="row footer" style="background-color: white"> <!-- footer div -->
+<div class="row footer" style="background-color: #DFE6EA"> <!-- footer div -->
 <div class="col-md-6"> <!-- logo div -->
 <a href="dashboard.html">
 <img src="images/logo-footer.png" class="img-fluid" style="padding-left: 15%; padding-right: 4%; padding-top: 2%; padding-bottom: 2%; float: left;">
@@ -130,7 +139,7 @@
     </div>
     
     
-</div> <!--end container div -->
+ <!--end container div -->
 
     
 

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dashboard: Project View</title>
+<title>Dashboard: Map View</title>
 
 <!-- Bootstrap v4 -->
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="screen">
@@ -42,19 +42,57 @@
 </ul>
 </nav>    
     </div>
-<div class="row"> <!-- div for project boxes -->
+<div class="row"> 
 <!-- tab div -->
 <div class="col-md-12" style="background-color: white; text-align: center; padding-top: 2%; height: 200%">
 <ul class="nav nav-tabs" style="justify-content: center; font-size: 30px">
   <li class="nav-item">
-    <a class="nav-link active" style="text-decoration: underline; background-color: #DFE6EA" href="#">Project View</a>
+    <a class="nav-link active" style=" background-color: " href="dashboard.html">Project View</a>
   </li>
-  <li class="nav-item" style="background-color: ;">
+  <li class="nav-item" style="text-decoration: underline; background-color: #DFE6EA">
     <a class="nav-link"href="map.html">Map View</a>
   </li>
     </ul>
     </div>
-<div class="col-md-12" style="background-color: #DFE6EA; text-align: center; padding-top: 2%; height: 200%">
+<div class="col-md-12" style="background-color:black">
+<div id="map-container-google-3" class="z-depth-1-half map-container-3">
+  <iframe src="https://maps.google.com/maps?q=warsaw&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+    style="border:0; width: 100%; position: fixed; height: 450px;" allowfullscreen></iframe>
+</div>
+<! -- search div --> 
+<div class="col-md-4 logIn" style="background-color: white; margin-left:5%; margin-bottom: 5%; margin-top: 5%; text-align: canter; padding-left: 7%"> 
+<h1 style=" font-weight: 600; font-size: 25px; padding-top: 2%"> 
+Search Published Data
+</h1>
+ <form style="font-size: 20px">
+      <fieldset>
+        <legend style="text-align: center"> </legend>
+        <p>
+          <label style="text-align:center;font-size: 20px">search:</label>
+            <br>
+          <input class="email"
+                 type = "text"
+                 value = "text here" />
+        </p>
+        <br>
+          
+      </fieldset>
+    <button class="logInButton" style="margin-bottom: 5%; align-items: center;background-color: #93A888">
+<a href="#">
+Search
+</a>
+</button>
+    <br>
+          <br>
+          <br>
+        
+    </form> 
+
+</div>    
+
+</div>
+
+</div>
     <br>
 <!--
     <a>
@@ -63,46 +101,11 @@
 <br>
 -->
 <br> 
-<div class="row" style="margin-bottom: 10%; margin-top: 4%"> <!-- individual project divs -->
-<div class="col projectOne" style="background-color: white; margin-left: 4%">
-<h2> Project One</h2>
-<h3 class="box-numbers" style="text-align: left; margin-left: 13%"> boxes:1,2</h3>
-<br>
-<br>
-<br>
-<button class="viewMore" style="margin-right: 30%"> <a href="project.html"> View More +</a> </button>
-<i class="fa fa-pencil fa-lg" aria-hidden="true"></i>
-</div>
-<div class="col projectTwo" style="background-color:white; margin-left: 2%;">
-<h2>Project Two</h2>
-<h3 class="box-numbers" style="text-align: left; margin-left: 13%"> boxes:</h3>
-<br>
-<br>
-<br>
-    
-<button class="viewMore" style="margin-right: 30%"> <a href="project.html"> View More +</a></button>
-<i class="fa fa-pencil fa-lg" aria-hidden="true"></i>
-</div>
-<div class="col projectThree" style="background-color: white; margin-left: 2%">
-<h2>Project Three</h2>
-<h3 class="box-numbers" style="text-align: left; margin-left: 10%"> boxes:</h3>
-<br>
-<br>
-<br>
-<button class="viewMore" style="margin-right: 30%"><a href="project.html"> View More +</a> </button>
-<i class="fa fa-pencil fa-lg" aria-hidden="true"></i>
-</div>
-<!-- new project button -->
-<div class="col projectNew" style="background-color: white; margin-left: 2%; margin-right: 4%">  
-<button class="btn-lg createNew" style="background-color:#AA4230"> <a href="newproject.html">Create New + </a></button>
-</div>
-</div>
-</div> 
 
 </div>
 
    <!-- end projects div -->
-<div class="row footer" style="background-color: white"> <!-- footer div -->
+<div class="row footer" style="background-color: #DFE6EA"> <!-- footer div -->
 <div class="col-md-6"> <!-- logo div -->
 <a href="dashboard.html">
 <img src="images/logo-footer.png" class="img-fluid" style="padding-left: 15%; padding-right: 4%; padding-top: 2%; padding-bottom: 2%; float: left;">
